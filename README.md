@@ -1,3 +1,4 @@
-# Java moderne (Programmation générique, fonctionnelle et concurrente)
+# Java moderne
+## Programmation générique, fonctionnelle et concurrente
 
-Book source codes.
+Codes sources des programmes utilisés dans le livre.
