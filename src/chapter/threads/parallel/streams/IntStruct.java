@@ -18,15 +18,15 @@ public class IntStruct {
     }
     public IntStruct() {
         newCurrent();
-        }
-    public void add(Integer i) {
+    }
+    public void add(int i) {
         if (index==SIZE) { newCurrent(); }
         current[index++] = i;
         size++;
     }
-    public String toSegment() {
-        return size==0 ?"[]": "["+get(0)+":"+get(size-1)+"]";
-    }
+//    public String toSegment() {
+//        return size==0 ?"[]": "["+get(0)+":"+get(size-1)+"]";
+//    }
     public void addAll(IntStruct s) {
         //        System.out.println("Recompose "+toSegment()+" with "+s.toSegment());
         data.removeLast();

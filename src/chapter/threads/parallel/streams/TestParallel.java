@@ -14,7 +14,7 @@ public class TestParallel {
                 .parallel()
                 .sorted()
                 .peek(e -> System.out.print(e+"["+tid()+"] "))
-                .forEach(e -> System.out.print(e+"("+tid()+") "));
+                .forEach(e->System.out.print(e+"("+tid()+") "));
             System.out.println();
         }
         System.out.println();
