@@ -10,7 +10,8 @@ import chapter.threads.threads.Utils;
 import static chapter.threads.asynchronous.ThenApplyExample.*;
 
 public class WhenCompleteExample {
-    private static CompletableFuture<Void>
+    @SuppressWarnings("unused")
+	private static CompletableFuture<Void>
     askFor(long start, String name) {
         var f = askForShoes(name);
         return f.orTimeout(3000, TimeUnit.MILLISECONDS)

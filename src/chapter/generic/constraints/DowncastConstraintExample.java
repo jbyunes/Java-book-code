@@ -10,7 +10,8 @@ public class DowncastConstraintExample {
         //		String s = Utils.functionalDownCast(n); // forbidden
 
 
-        Pair<Object,Integer> p = new Pair<>();
+        @SuppressWarnings("unused")
+		Pair<Object,Integer> p = new Pair<>();
         //		Pair<Integer,Object> p2; // forbidden
     }
 

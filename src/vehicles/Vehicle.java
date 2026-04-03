@@ -17,7 +17,8 @@ public interface Vehicle {
 //      }
 //  }   
 
-    public static String madeIn(Vehicle v) {
+    @SuppressWarnings("unused")
+	public static String madeIn(Vehicle v) {
         /* Old fashioned */
 //        if (v instanceof Panhard) { return "fr"; }
 //        if (v instanceof Oldsmobile) { return "us"; }

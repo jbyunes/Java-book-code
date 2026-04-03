@@ -71,7 +71,8 @@ public class Test {
         // count
 
         {
-            long n = List.of(1, 10, 3)
+            @SuppressWarnings("unused")
+			long n = List.of(1, 10, 3)
                     .stream()
                     .reduce(0, (count, e) -> count + 1);
             System.out.println("Il y a " + n + " éléments.");

@@ -2,8 +2,6 @@ package chapter.threads.parallel;
 
 import static java.lang.System.getProperty;
 
-import java.util.Random;
-import java.util.Scanner;
 import java.util.concurrent.ForkJoinPool;
 
 public class Utils {

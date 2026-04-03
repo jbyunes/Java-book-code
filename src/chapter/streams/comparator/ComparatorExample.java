@@ -5,7 +5,8 @@ import static java.util.Comparator.*;
 import chapter.streams.utils.Person;
 
 public class ComparatorExample {
-    public static void main(String[] args) {
+    @SuppressWarnings("unused")
+	public static void main(String[] args) {
 //        Comparator<Person> byAscName       =
 //            (p1, p2) -> p1.name().compareTo(p2.name());
 //        Comparator<Person> byDecName       =

@@ -3,6 +3,7 @@ package chapter.novelties.records;
 import java.util.Arrays;
 import java.util.Iterator;
 
+@SuppressWarnings("unchecked")
 public record Tuple<T>(T... values) implements Iterable<T> {
     @Override public Iterator<T> iterator() {
         return Arrays.asList(values).iterator();

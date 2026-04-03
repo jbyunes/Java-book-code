@@ -15,7 +15,8 @@ abstract class X {
  */
 
 public class TestStrange {
-    public static void main(String[] args) {
+    @SuppressWarnings("unused")
+	public static void main(String[] args) {
         Integer i = 666;
         Comparable<Integer> ci = i;
         Comparable<? extends Integer> cei = i;

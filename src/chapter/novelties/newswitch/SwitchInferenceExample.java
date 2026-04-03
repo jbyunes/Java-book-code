@@ -1,7 +1,8 @@
 package chapter.novelties.newswitch;
 
 public class SwitchInferenceExample {
-    public static void main(String[] args) {
+    @SuppressWarnings("unused")
+	public static void main(String[] args) {
         for (int v=1; v<5; v++) {
             var i = switch(v) {
                 case 1 -> Integer.MAX_VALUE;

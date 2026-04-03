@@ -13,7 +13,8 @@ import static chapter.threads.parallel.streams.Utils.*;
 import static chapter.threads.threads.Utils.*;
 
 public class TestFlush {
-    private static void experience(Consumer<List<Double>> flush,
+    @SuppressWarnings("unused")
+	private static void experience(Consumer<List<Double>> flush,
                                    DoubleUnaryOperator f,
                                    String msg) {
         final int START = 200_000;
@@ -49,7 +50,8 @@ public class TestFlush {
                               l.size(),timeSequential, timeParallel, factor);
         }
     }
-    public static void main(String[] args) {
+    @SuppressWarnings("unused")
+	public static void main(String[] args) {
         printInfos();
 
         Function<Double,Double> f = d -> 2*d;

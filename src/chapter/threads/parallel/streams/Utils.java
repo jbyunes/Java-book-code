@@ -27,7 +27,8 @@ public class Utils {
             r.parallel(), r.acceleration()));
 
     }
-    public static void printGnuplot(String message,
+    @SuppressWarnings("unused")
+	public static void printGnuplot(String message,
             TreeMap<Long,Result> result,
             Function<Result,Long> x) {
         System.out.println("\n# "+message);

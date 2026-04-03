@@ -15,7 +15,8 @@ public class OrTimeoutExample {
         var f = askForShoes(name);
         return f.orTimeout(3000, TimeUnit.MILLISECONDS);
     }
-    public static void main(String []args) {
+    @SuppressWarnings("unused")
+	public static void main(String []args) {
         var futures = new ArrayList<CompletableFuture<Void>>();
         names.forEach(p -> futures.add(askFor(p)
             .thenAccept(Utils::print)));

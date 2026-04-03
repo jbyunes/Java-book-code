@@ -4,6 +4,7 @@ import vehicles.Vehicle;
 import vehicles.VehicleFactory;
 import vehicles.Vehicles;
 
+@SuppressWarnings("unused")
 public class VehiclesExample {
     public static void main(String[] args) throws Exception {
         /*

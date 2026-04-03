@@ -8,7 +8,8 @@ import java.util.stream.Stream;
 import chapter.streams.utils.Person;
 
 public class TestSorted {
-    public static void main(String[] args) {
+    @SuppressWarnings("unused")
+	public static void main(String[] args) {
         Random r = new Random(666);
         IntStream.generate(r::nextInt)
             .limit(10)

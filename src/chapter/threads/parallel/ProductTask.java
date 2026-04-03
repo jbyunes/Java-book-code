@@ -9,8 +9,6 @@ import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.RecursiveTask;
 
-import chapter.threads.parallel.RecursiveSummer.Interval;
-
 public class ProductTask extends RecursiveTask<BigInteger> {
     private static final long serialVersionUID = 1L;
 

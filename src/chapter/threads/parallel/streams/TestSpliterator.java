@@ -2,11 +2,8 @@ package chapter.threads.parallel.streams;
 
 import java.time.Month;
 import java.time.Year;
-import java.time.YearMonth;
 import java.util.Arrays;
-import java.util.Spliterator;
 import java.util.concurrent.Executors;
-import java.util.function.Consumer;
 import java.util.stream.IntStream;
 import chapter.threads.threads.Utils;
 

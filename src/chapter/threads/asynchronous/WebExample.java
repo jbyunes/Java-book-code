@@ -53,7 +53,8 @@ public class WebExample {
         var i = p.thenApplyAsync(Page::getImageURL)
             .thenApplyAsync(ImageLoader::loadContent);
         
-        var f = p.thenCombineAsync(i,Page::insertImage)
+        @SuppressWarnings("unused")
+		var f = p.thenCombineAsync(i,Page::insertImage)
             .thenCombineAsync(up, (page1, page2) -> page1)
             .thenApplyAsync(Page::updateUI);
         
